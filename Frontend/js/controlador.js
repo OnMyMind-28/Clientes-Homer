@@ -60,15 +60,17 @@ var empresas =[
                 }
 
  ];
- //Local Storage Usuarios
+ //Local Storage empresas
 var localStorageEmpresas = window.localStorage;
-var localStorageProductos = window.localStorage;
+
 
 if(localStorageEmpresas.getItem('empresas')==null){
     localStorage.setItem('empresas', JSON.stringify(empresas));
 } else {
     empresas = JSON.parse(localStorageEmpresas.getItem('empresas'))
 }
+// Local storage productos
+var localStorageProductos = window.localStorage;
 if(localStorageProductos.getItem('productos')==null){
     localStorage.setItem('productos', JSON.stringify(productos));
 } else {
