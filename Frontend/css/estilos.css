@@ -6,6 +6,7 @@
 @media (max-width: 360px){
     /*Diseño navbar*/
     .nav-color{
+        width: 110%;
         background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,209,67,1) 0%, rgba(255,145,83,1) 90% );
      }
      button:hover{
@@ -153,7 +154,24 @@
   .f-modal{
       margin-right: 2.5rem;
   }
+  /*Nav*/
+  .imgperfil{
+    width: 3rem;
+    margin-bottom: 14px;
+    height: 3rem;
+    border-radius: 100%;
+    margin-left: 1.6rem;
+   }
 
+   #lupa{
+    margin-left: 0.3rem;
+
+   }
+   .input-buscador{
+    margin-left: 0.8rem;
+    border-radius: 8%;
+   }
+  
 
 /****************************************/
   .modal-container {

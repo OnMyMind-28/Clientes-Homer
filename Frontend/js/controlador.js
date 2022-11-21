@@ -4,28 +4,28 @@ var empresas =[
   {
          /*Little caesars-Res*/ 
         nombreEmpresa: "Little Caesars",
-        imagen: "Frontend/img/empresas/1.res.png",
+        imagen: "./Frontend/img/empresas/1.res.png",
         calificacion: 5,
        
     },
      /*KFC-Res*/ 
         {
             nombreEmpresa: "KFC",
-            imagen: "Frontend/img/empresas/2.res.png",
+            imagen: "./Frontend/img/empresas/2.res.png",
             calificacion: 4,
            
         },
         /*Burger king-Res*/ 
         {
             nombreEmpresa: "Burger King",
-            imagen: "Frontend/img/empresas/3.res.png",
+            imagen: "./Frontend/img/empresas/3.res.png",
             calificacion: 5,
         
         },
         /*Taco Bell-Res*/ 
         {
             nombreEmpresa: "Taco Bell",
-            imagen: "Frontend/img/empresas/4.res.png",
+            imagen: "./Frontend/img/empresas/4.res.png",
             calificacion: 5,
            
         
@@ -36,25 +36,25 @@ var empresas =[
     
             {
                 nombreProducto: "KING JR. HAMBURGUESA",
-                urlImagen: "Frontend/img/productos/1.king.png",
+                urlImagen: "../Frontend/img/productos/1.king.png",
                 descripcion: "Lorem ipsum, Dolore, modi!",
                 precio: 150.00
             },
                 {
                     nombreProducto: "WHOPPER",
-                    urlImagen: "Frontend/img/productos/3.whopper.png",
+                    urlImagen: "./Frontend/img/productos/3.whopper.png",
                     descripcion: "Lorem ipsum, Dolore, modi!",
                     precio: 99.99
                 },
                 {
                     nombreProducto: "SUNDAE",
-                    urlImagen: "Frontend/img/productos/2.sundae.png",
+                    urlImagen: "./Frontend/img/productos/2.sundae.png",
                     descripcion: "Lorem ipsum, Dolore, modi!",
                     precio: 59.99
                 },
                 {
                     nombreProducto: "WHOPPER DOBLE",
-                    urlImagen: "Frontend/img/productos/3.whopper.png",
+                    urlImagen: "./Frontend/img/productos/3.whopper.png",
                     descripcion: "Lorem ipsum, Dolore, modi!",
                     precio: 209.99
                 }
