@@ -8,7 +8,7 @@
       "editorLineNumber.foreground": "#f3bc084b",
       "activityBar.background": "#7520eb",//Barra lateral izquierda
       "titleBar.activeBackground": "#ddb00c",//Barra superior
-      "titleBar.activeForeground": "#FDF8FD"
+      "titleBar.activeForeground": "#fdf8fc"
     }
   }
   
