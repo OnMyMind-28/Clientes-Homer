@@ -77,13 +77,15 @@ if(localStorageProductos.getItem('productos')==null){
     productos = JSON.parse(localStorageProductos.getItem('productos'))
 }
 
-//Funcion contenidos 
+//Funcion contenidos  principales 
 const opcionNav = 1 ; //opcion para ver el contenido despues del inico de sesión
 const opcionLanding = 2; 
 const opcionModalIni= 3;
 const opcionModalReg = 4;
 const opcionEmpresas = 5;
 const opcionProductos = 6;
+const opcionOrdenes = 7;
+const opcionRealizarPago = 8;
 
 
 function selecionContenido(opcion){
@@ -96,6 +98,8 @@ function selecionContenido(opcion){
             document.getElementById('contenido-4').style.display = "none";
             document.getElementById('contenido-5').style.display = "none";
             document.getElementById('contenido-6').style.display = "none";
+            document.getElementById('contenido-7').style.display = "none";
+            document.getElementById('contenido-8').style.display = "none";
             break;
         case opcionLanding:
             document.getElementById('contenido-1').style.display = "none";
@@ -104,6 +108,8 @@ function selecionContenido(opcion){
             document.getElementById('contenido-4').style.display = "none";
             document.getElementById('contenido-5').style.display = "none";
             document.getElementById('contenido-6').style.display = "none";
+            document.getElementById('contenido-7').style.display = "none";
+            document.getElementById('contenido-8').style.display = "none";
             break;
         case opcionModalIni:
             document.getElementById('contenido-1').style.display = "none";
@@ -112,6 +118,8 @@ function selecionContenido(opcion){
             document.getElementById('contenido-4').style.display = "none";
             document.getElementById('contenido-5').style.display = "none";
             document.getElementById('contenido-6').style.display = "none";
+            document.getElementById('contenido-7').style.display = "none";
+            document.getElementById('contenido-8').style.display = "none";
             break;
         case opcionModalReg:
             document.getElementById('contenido-1').style.display = "none";
@@ -120,6 +128,8 @@ function selecionContenido(opcion){
             document.getElementById('contenido-4').style.display = "block";
             document.getElementById('contenido-5').style.display = "none";
             document.getElementById('contenido-6').style.display = "none";
+            document.getElementById('contenido-7').style.display = "none";
+            document.getElementById('contenido-8').style.display = "none";
             break;
         case opcionEmpresas:
             document.getElementById('contenido-1').style.display = "block";
@@ -128,6 +138,8 @@ function selecionContenido(opcion){
             document.getElementById('contenido-4').style.display = "none";
             document.getElementById('contenido-5').style.display = "block";
             document.getElementById('contenido-6').style.display = "none";
+            document.getElementById('contenido-7').style.display = "none";
+            document.getElementById('contenido-8').style.display = "none";
             break;
         case opcionProductos:
             document.getElementById('contenido-1').style.display = "block";
@@ -136,14 +148,41 @@ function selecionContenido(opcion){
             document.getElementById('contenido-4').style.display = "none";
             document.getElementById('contenido-5').style.display = "none";
             document.getElementById('contenido-6').style.display = "block";
+            document.getElementById('contenido-7').style.display = "none";
+            document.getElementById('contenido-8').style.display = "none";
+            break;
+        case opcionOrdenes :
+            document.getElementById('contenido-1').style.display = "block";
+            document.getElementById('contenido-2').style.display = "none";
+            document.getElementById('contenido-3').style.display = "none";
+            document.getElementById('contenido-4').style.display = "none";
+            document.getElementById('contenido-5').style.display = "none";
+            document.getElementById('contenido-6').style.display = "none";
+            document.getElementById('contenido-7').style.display = "block";
+            document.getElementById('contenido-8').style.display = "none";
+            break;
+        case opcionRealizarPago :
+            document.getElementById('contenido-1').style.display = "block";
+            document.getElementById('contenido-2').style.display = "none";
+            document.getElementById('contenido-3').style.display = "none";
+            document.getElementById('contenido-4').style.display = "none";
+            document.getElementById('contenido-5').style.display = "none";
+            document.getElementById('contenido-6').style.display = "none";
+            document.getElementById('contenido-7').style.display = "none";
+            document.getElementById('contenido-8').style.display = "block";
             break;
     }
 }
 /******************************************************************************************** */
 //Función para contenido de submenus izq
 const opcionNoti = 1;
-const opcion2 = 2;
-const opcion3 = 3;
+const opcionMisPedidos = 2;
+const opcionCupones = 3;
+const opcionPago = 4;
+const opcionCuenta = 5;
+const opcionSeguridad = 6;
+const opcionAyuda = 7;
+
 
 function opcionesSubmenu (opcion){
     switch (opcion) {
@@ -151,13 +190,78 @@ function opcionesSubmenu (opcion){
             document.getElementById('contenido-1').style.display = "block";
             document.getElementById('contenido-all-principal').style.display = "none";
             document.getElementById('sub-notificacion').style.display = "block";
-            document.getElementById('sub-opcion2').style.display = "none";
+            document.getElementById('sub-misPedidos').style.display = "none";
+            document.getElementById('sub-cupones').style.display = "none";
+            document.getElementById('sub-pago').style.display = "none";
+            document.getElementById('sub-cuenta').style.display = "none";
+            document.getElementById('sub-seguridad').style.display = "none";
+            document.getElementById('sub-ayuda').style.display = "none";
             break;
-        case opcion2:
+        case opcionMisPedidos:
             document.getElementById('contenido-1').style.display = "block";
             document.getElementById('contenido-all-principal').style.display = "none";
             document.getElementById('sub-notificacion').style.display = "none";
-            document.getElementById('sub-opcion2').style.display = "block";
+            document.getElementById('sub-misPedidos').style.display = "block";
+            document.getElementById('sub-cupones').style.display = "none";
+            document.getElementById('sub-pago').style.display = "none";
+            document.getElementById('sub-cuenta').style.display = "none";
+            document.getElementById('sub-seguridad').style.display = "none";
+            document.getElementById('sub-ayuda').style.display = "none";
+            break;
+        case opcionCupones:
+            document.getElementById('contenido-1').style.display = "block";
+            document.getElementById('contenido-all-principal').style.display = "none";
+            document.getElementById('sub-notificacion').style.display = "none";
+            document.getElementById('sub-misPedidos').style.display = "none";
+            document.getElementById('sub-cupones').style.display = "block";
+            document.getElementById('sub-pago').style.display = "none";
+            document.getElementById('sub-cuenta').style.display = "none";
+            document.getElementById('sub-seguridad').style.display = "none";
+            document.getElementById('sub-ayuda').style.display = "none";
+            break;
+        case opcionPago:
+            document.getElementById('contenido-1').style.display = "block";
+            document.getElementById('contenido-all-principal').style.display = "none";
+            document.getElementById('sub-notificacion').style.display = "none";
+            document.getElementById('sub-misPedidos').style.display = "none";
+            document.getElementById('sub-cupones').style.display = "none";
+            document.getElementById('sub-pago').style.display = "block";
+            document.getElementById('sub-cuenta').style.display = "none";
+            document.getElementById('sub-seguridad').style.display = "none";
+            document.getElementById('sub-ayuda').style.display = "none";
+            break;
+        case opcionCuenta:
+            document.getElementById('contenido-1').style.display = "block";
+            document.getElementById('contenido-all-principal').style.display = "none";
+            document.getElementById('sub-notificacion').style.display = "none";
+            document.getElementById('sub-misPedidos').style.display = "none";
+            document.getElementById('sub-cupones').style.display = "none";
+            document.getElementById('sub-pago').style.display = "none";
+            document.getElementById('sub-cuenta').style.display = "block";
+            document.getElementById('sub-seguridad').style.display = "none";
+            document.getElementById('sub-ayuda').style.display = "none";
+            break;
+        case opcionSeguridad:
+            document.getElementById('contenido-1').style.display = "block";
+            document.getElementById('contenido-all-principal').style.display = "none";
+            document.getElementById('sub-notificacion').style.display = "none";
+            document.getElementById('sub-misPedidos').style.display = "none";
+            document.getElementById('sub-cupones').style.display = "none";
+            document.getElementById('sub-pago').style.display = "none";
+            document.getElementById('sub-cuenta').style.display = "none";
+            document.getElementById('sub-seguridad').style.display = "block";
+            document.getElementById('sub-ayuda').style.display = "none";
+            break;
+        case opcionAyuda:
+            document.getElementById('contenido-1').style.display = "block";
+            document.getElementById('contenido-all-principal').style.display = "none";
+            document.getElementById('sub-notificacion').style.display = "none";
+            document.getElementById('sub-misPedidos').style.display = "none";
+            document.getElementById('sub-cupones').style.display = "none";
+            document.getElementById('sub-pago').style.display = "none";
+            document.getElementById('sub-cuenta').style.display = "none";
+            document.getElementById('sub-seguridad').style.display = "none";
+            document.getElementById('sub-ayuda').style.display = "block";
             break;
     
         default:
@@ -232,7 +336,7 @@ function generarProductos() {
            
               <h6 id="texto" class="card-title ">${producto.nombreProducto}
               <p id="" class="card-text">${producto.descripcion}</p> 
-              <button id="opcion-orden" class="btn-orden opcion" onclick="modalInicio(), selecionContenido() " onchange="">
+              <button id="opcion-orden" class="btn-orden opcion" onclick="detalleOrden(), selecionContenido(7) " onchange="">
               ordenar
             </button> 
               <p id="" class="card-precio">  Desde:L. ${producto.precio} </p>
@@ -249,3 +353,21 @@ function GeneraNotificaciones() {
     
     `; 
 }
+
+//Genera el contenido del detalle de el producto a ordenar 
+function detalleOrden() { 
+    document.getElementById('contenido-7').innerHTML = ''; 
+    productos.forEach(function (producto) { 
+        document.getElementById('contenido-7').innerHTML += `
+       <p>${producto.nombreProducto}</p>
+       <p>${producto.descripcion}</p>
+       <p>${producto.precio}</p>
+       <button id="opcion-inicio" class="btn-inicio opcion" onclick=" selecionContenido(8) " onchange="">
+           Realizar pago
+      
+          </button>
+  
+           
+            `;
+    }) 
+} 
