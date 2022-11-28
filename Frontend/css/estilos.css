@@ -4,9 +4,10 @@
 }
 
 @media (max-width: 360px){
+
     /*Diseño navbar*/
     .nav-color{
-        width: 110%;
+        width: 100%;
         background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,209,67,1) 0%, rgba(255,145,83,1) 90% );
      }
      button:hover{
@@ -29,8 +30,15 @@
          height: 640px;
         
      }
+
+     a.dropdown-item{
+       color: #6C6966;
+     
+        
+    }
      .dropdown-item {
          margin-top: 1rem;
+         
      }
      .dropdown-menu menu{
          margin-top: 0;
@@ -160,7 +168,7 @@
     margin-bottom: 14px;
     height: 3rem;
     border-radius: 100%;
-    margin-left: 1.6rem;
+    margin-left: 1.1rem;
    }
 
    #lupa{
@@ -174,12 +182,22 @@
   
 
 /****************************************/
+  /*Resgistro  */
+
+h5{
+    color: #6C6966 !important;
+    text-align:  center!important ;
+    font-size: small;
+}
+
+/*Resgistro*/
   .modal-container {
    background-color: #FFFFFF;
-   width: 250px;
-   height: 150px;
+   width: 270px;
+   height: 14rem;
    margin: auto;
-   position: relative;
+   position: relative;  
+   border-radius: 1rem;
   }
   .modal-form{
   text-align: center;
@@ -217,19 +235,51 @@
     border-radius: 7px;
     
 }
+/*Diseño card texto*/
+h6.nombre-restaurant{
+    color: #6C6966;
+}
 .card-Emp:hover{
     background-image: linear-gradient( 102.4deg,  rgba(253,189,85,1) 7.8%, rgba(249,131,255,1) 100.3% ) !important;
 }
+/*Diseño card Producto*/
 .card-prod{
+    display: flex;
+    flex-direction: row-reverse;
+    align-content: center;
+    justify-content: space-between;
+    align-content: center;
     width: 340px !important;
     height: 130px !important;
     margin-left: 1.4rem;
     margin-top: 8px !important;
-    display:inline-block;
+   
     background-color: #FFFFFF;
     border-radius: 7px;
     
 }
+
+/*Diseño btn-orden y precio */
+  
+.btn-orden{
+    background-color:  #FEBB22;
+    color: #FFFFFF;
+    border-radius: 15px;
+    border: 0;
+    cursor: pointer;
+   }
+
+    /*Diseño Precio  working because, its have to be on left*/
+   .card-precio{
+    color: #FEBB22;
+    text-align: end;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    padding-left: 0px;
+}
+    /*Diseño   btn-orden y precio*/
+
 .card-prod:hover{
     background-image: linear-gradient( 102.4deg,  rgba(253,189,85,1) 7.8%, rgba(249,131,255,1) 100.3% ) !important;
 }
@@ -241,7 +291,8 @@ height: 60px !important;
 .img-prod{
     width: 100px !important;
     height: 60px !important; 
-    margin-top: 30px;
+    /*Imagen de restaurantes 30 antes*/
+    margin-top: 10px;
 }
 .nombre-restaurant{
     margin-left: 150px;
@@ -265,6 +316,7 @@ height: 60px !important;
     display: inline-block !important;
     vertical-align: top !important;
     margin-top: 10px;
+    color: #6C6966;
   }
  
 }

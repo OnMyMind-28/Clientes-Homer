@@ -169,8 +169,9 @@ function modalInicio () {
         document.getElementById ('modalInicio').innerHTML += `
         <div class="modal-container ">
     <form id="formularioInicio" class="modal-form" onsubmit="noRecargo(event)">
-    <h5>Inicio de sesión</h5>
+    <h5>E-mail</h5>
     <input id="mail" class="mt-2" type="text">
+    <h5>password</h5>
     <input type="password" id="pass" class="mt-2" type="text">
     <button class="btn-modal" onclick="selecionContenido(1),selecionContenido(5), generarEmpresa()">Iniciar sesión</button>
     </form>
@@ -228,9 +229,14 @@ function generarProductos() {
         
          
             <img src="${producto.urlImagen}" class="img-fluid rounded-start img-prod" alt="...">
+           
               <h6 id="texto" class="card-title ">${producto.nombreProducto}
-              <p id="" class="card-text">${producto.descripcion}</p>
-              </h6>
+              <p id="" class="card-text">${producto.descripcion}</p> 
+              <button id="opcion-orden" class="btn-orden opcion" onclick="modalInicio(), selecionContenido() " onchange="">
+              ordenar
+            </button> 
+              <p id="" class="card-precio">  Desde:L. ${producto.precio} </p>
+          </h6>
       </div>
            
             `;
