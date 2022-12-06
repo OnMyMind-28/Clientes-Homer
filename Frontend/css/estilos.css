@@ -204,6 +204,11 @@
     border-radius: 8%;
    }
   
+   .fa-cart-shopping{
+    margin-left: 0.2rem;
+    color: #FFFFFF;
+
+   }
 
 /****************************************/
   /*Resgistro  */
@@ -215,6 +220,8 @@ h5{
 }
 
 /*Resgistro*/
+
+   
   .modal-container {
    background-color: #FFFFFF;
    width: 270px;
@@ -237,6 +244,21 @@ h5{
   cursor: pointer;
   margin-top: 2px;
 }
+
+.loginReg.passLogin.emailLogin{
+    text-align: left;
+    color: #42403e !important;
+}
+.emailLogin{
+    
+    font-size: medium;
+}
+
+.passLogin{
+    font-size: medium;
+}
+   
+
 .modal-inicio{
     display: flex;
     justify-content: center;
@@ -344,4 +366,407 @@ height: 60px !important;
   }
  
 }
+/*TODO: Orden*/
+/*!Orden*/
+.cardOrden{
 
+    width: 340px !important;
+    height: 150px !important;
+    margin: 0.4rem;
+    background-color: #bdaeac3a;
+    border-radius: 10px;
+    
+
+}
+/*!Orden Boton*/
+
+.ordenH1{
+    margin: 1.5rem;
+    color: blueviolet;
+}
+.PrecioOrden{
+    color: #51146d;
+    align-items: center;
+}
+
+.ordenbutton{
+    align-items: center !important;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+/*!Orden*/
+
+
+
+
+/*TODO: Pago*/
+/*TODO: dse encunetra, h1, los input y finalizar orden*/
+
+/*!Encabezado de la targeta*/
+
+.formulario-tarjeta{
+    background-color: #FFFFFF;
+    width: 19.5rem;
+    margin: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.addTargeta{
+    color: #FFFFFF;
+    font-style: bold;
+    font-size: 26px;
+    text-align: center;
+}
+.tituloPago{
+    background-color:#D9D9D9;
+    width: 0.5srem;
+    height: 3.20rem;
+    font-size: 30px;
+    color: rgb(51, 16, 83);
+    -webkit-margin-bottom-collapse: separate;
+}
+/* ! backroung de la targeta*/
+.grupoPago{
+   
+    height: 120%;
+}
+.opcionOrden{
+  
+    height: 0;
+    padding-bottom: 100px;
+
+}
+
+/* ! buttons*/
+
+.opcionOrden.button{
+  align-items: center !important;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  margin: 3rem;
+}
+
+
+/* ! button NumeroTarjeta*/
+#inputNumero{
+    background-color:#D9D9D9;
+    width: 16.8rem;
+    border-radius: 15px;
+    margin: 0.5rem;
+}
+/* ! button CCV*/
+#inputCCV{
+    background-color:#D9D9D9;
+    width: 6rem;
+    border-radius: 15px;
+    padding-left: 10px;
+    margin: 0.6rem;
+}
+/* ! button  finalizarOrden*/
+.finalizarOrden{
+    align-items: left !important;
+    width: 13rem !important;
+    border-radius: 15px;
+    
+}
+
+/* !Botton*/
+.finalizarOrden{
+    align-items: left;
+    padding: 0.4rem;
+    margin: 3rem;
+  
+  
+  }
+/* ! H6 pago, ccv*/
+  .Pago{
+    margin: 0.6rem;
+    padding-top: 0.2rem;
+}
+
+.inputext{
+    font-size: medium;
+    color: rgb(51, 16, 83);
+    margin: 0.6rem;
+   
+}
+
+.tituloPago.h1{
+    margin: 0.6rem;
+    padding: 10px;
+    text-align: center;
+}
+
+.img-pago{
+
+   width: 9rem;
+}
+
+.footerPago{
+ float: auto;
+   padding: 80px;
+   background-color: #FFC2B2; 
+}
+
+.imgFooter{
+    
+  width: 9.5rem;   
+}
+
+
+/*sub-menus*/
+/*TODO: de ayudas*/
+/* modal */
+/* ! padre */
+.modalA{
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    background-color: #f0e4e4bd; 
+    display: flex; 
+    opacity: 0; 
+    pointer-events: none; 
+    transition: opacity .6s .9s; 
+    --transform: translateY(-100vh); 
+    --transition: transform .8s; 
+
+}
+
+/* Modal-conteinaer   */
+/* ! hijo */
+.modalB{ 
+    margin: auto;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90%;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 3em 2.5em;
+    display: grid;
+    gap: 1em;
+    place-items: center;
+    grid-auto-columns: 100%;
+    transform: var(--transform);
+    transition:var(--transition);
+}
+
+/* ? para modificar la visat del modal */
+
+.modalA--Show { 
+    opacity: 1; 
+    pointer-events: unset; 
+    transition: opacity .6s; 
+    --transform: translateY(0); 
+    --transition: transform .8s .8s; 
+}
+
+.modalCall{
+    text-decoration: none;
+    color: rgb(6, 2, 7);
+    background-color: #bdaeac;
+    padding: 1em 3em;
+    border: 1px solid ;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: 300;
+    transition: background-color .3s;
+
+}
+
+.modalclose{
+    text-decoration: none;
+    color: rgb(43, 13, 46);
+    background-color: #f59f00;
+    padding: 1em 3em;
+    border: 1px solid ;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: 300;
+    transition: background-color .3s;
+}
+
+.modalclose:hover{
+    color: #FEBB22;
+    background-color:blueviolet;
+}
+
+.ayuda , h1 p{
+    text-align: center;
+    margin-bottom:20px ;
+    font-weight: 300s;
+    color: #6C6966;
+    
+}
+
+.modalclose, .modalCall{
+    color: #000000;
+    
+}
+
+
+.img-ayuda{
+    width: 12rem;
+}
+
+
+/** Segurida*/
+/*TODO: Falta verificar el cierre*/
+.contenerSeguridad{
+    background-color: #fffdfa7c;
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+
+
+.Seg-titulo1{
+    
+    font-style:bold;
+    margin-top:1rem;
+    font-size: 1.8rem;
+    color: #3d3544;
+    border-radius: 0;
+    text-align: center;
+
+
+
+}
+.Seg-titulo{
+   
+    font-style:bold;
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #3d3544;
+}
+.Seg-text{
+    background-color: rgba(255, 255, 255, 0.322);
+    font-style:bold;
+    margin-top:1rem;
+    margin-bottom: 1.3rem;
+    font-size: 1.4rem;
+    text-align: center;
+    color: #1b1a1d;
+    border-radius: 25px;
+}
+
+
+
+
+
+/*TODO: */
+/**cupon*/
+
+.contenetdorCupon{
+    background-color: #fffdfa7c;
+}
+
+
+.cupon-titule{
+    font-style:bold;
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 26px;
+    color: #211727;
+   
+}
+.cupon-titule{
+    background-color: #c5b8ac41 !important;
+    border-radius: 28px;
+}
+
+.cupon-text{ 
+padding: 10px;
+margin: 20px;
+
+}
+
+.cupondiv{
+    display: flex;
+    
+}
+.cupondiv{
+   height: 9rem;
+    
+}
+
+.btncodigo{
+    align-items: center !important;
+    max-width: 10rem !important;
+    padding: 10px;
+    margin: 30px;
+    width: 30px;
+    background-image: linear-gradient( 102.4deg,  rgba(253,189,85,1) 7.8%, rgba(249,131,255,1) 100.3% ) !important;
+     color: #6C6966;
+     border-radius: 15px;
+     border: 0;
+     cursor: pointer;
+}
+
+.cupon-img {
+    padding: 0.5rem;
+   margin-bottom: 10px;
+    font-display: flex;
+    width: 10rem;
+}
+
+
+/*TODO: */
+/**Mis Pedidos*/
+
+.contenedorPedidos{
+   background-color: #fff;
+}
+
+.pedido-h{
+    display: flex;
+}
+
+.Pedidos-titulo{
+    text-align: center;
+   padding: 10px;
+    margin: 0;
+    color:#6C6966;
+}
+/*! terminer  no estan posicionados los titulos */
+.pedido-h{
+    display: flex;
+}
+.pedido-H1{
+    padding: 20px;
+    font-size: small;
+ 
+    color: #6C6966;
+}
+
+.pedido-H2{
+    font-size: small;
+  
+    color: #6C6966;
+}
+/**! faltan los botenes he igual*/
+.pedi-btn{
+    display: flex;
+    align-items: center !important;
+    padding: 10px;
+    margin: 30px;
+    width: 10rem;
+     border-radius: 15px;
+     border: 0;
+     cursor: pointer;
+}
+
+.btnPedidosb, .btnPedidosa{
+    align-items: center !important;
+    padding: 10px;
+    margin: 30px;
+    width: 10rem;
+    
+}

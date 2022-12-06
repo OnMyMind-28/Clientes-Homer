@@ -1,4 +1,42 @@
 //JSON
+
+var usuarios = [{
+    nombre: "Lisa NewHoses",
+    apellido: "NewHoses",
+    ordenes: [{
+        nombreProducto: "KING JR. HAMBURGUESA",
+        descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
+        cantidad: 2,
+        precio: 49.99
+    },
+        {
+            nombreProducto: "KING JR. HAMBURGUESA",
+            descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
+            cantidad: 2,
+            precio: 49.99
+        }
+    ]
+},
+    {
+        nombre: "Pam",
+        apellido: "Vdel",
+        ordenes: [{
+            nombreProducto: "KFC",
+            descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
+            cantidad: 2,
+            precio: 49.99
+        },
+            {
+                nombreProducto: "SUNDAE",
+                descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
+                cantidad: 2,
+                precio: 49.99
+            }
+        ]
+    },
+
+];
+
 var empresas =[
  /***********Comida-Restaurantes***************/ 
   {
@@ -78,7 +116,7 @@ if(localStorageProductos.getItem('productos')==null){
 }
 
 //Funcion contenidos  principales 
-const opcionNav = 1 ; //opcion para ver el contenido despues del inico de sesión
+const opcisonNav = 1 ; //opcion para ver el contenido despues del inico de sesión
 const opcionLanding = 2; 
 const opcionModalIni= 3;
 const opcionModalReg = 4;
@@ -185,6 +223,7 @@ const opcionAyuda = 7;
 
 
 function opcionesSubmenu (opcion){
+
     switch (opcion) {
         case opcionNoti:
             document.getElementById('contenido-1').style.display = "block";
@@ -197,6 +236,7 @@ function opcionesSubmenu (opcion){
             document.getElementById('sub-seguridad').style.display = "none";
             document.getElementById('sub-ayuda').style.display = "none";
             break;
+           
         case opcionMisPedidos:
             document.getElementById('contenido-1').style.display = "block";
             document.getElementById('contenido-all-principal').style.display = "none";
@@ -284,9 +324,12 @@ function modalInicio () {
 function modalRegistro () {
     document.getElementById ('modalRegistro').innerHTML += `
     <div class="modal-container ">
+  
 <form id="formularioRegistro"  class="modal-form" onsubmit="noRecargo(event)">
-<h5>Registro</h5>
+<h5 class="loginReg">Registro</h5>
+<h6 class="emailLogin"> Email</h6>
 <input id="mail" class="mt-2" type="text">
+<h5 class="password-Login"> Password</h5>
 <input type="password" id="pass" class="mt-2" type="text">
 <button class="btn-modal" onclick="selecionContenido(1),selecionContenido(5), generarEmpresa()">Iniciar sesión</button>
 </form>
@@ -359,15 +402,59 @@ function detalleOrden() {
     document.getElementById('contenido-7').innerHTML = ''; 
     productos.forEach(function (producto) { 
         document.getElementById('contenido-7').innerHTML += `
-       <p>${producto.nombreProducto}</p>
-       <p>${producto.descripcion}</p>
-       <p>${producto.precio}</p>
-       <button id="opcion-inicio" class="btn-inicio opcion" onclick=" selecionContenido(8) " onchange="">
+        
+                <div class=" cardOrden">
+                    <div class="row" id=""   class="" >
+                        <p>${producto.nombreProducto}</p>
+                        <p>${producto.descripcion}</p>
+                       <p  class="PrecioOrden">Precio L.${producto.precio}</p>   
+                    </div>
+                </div>
+       <button id="opcion-inicio" class="btn-inicio opcion    ordenbutton" onclick=" selecionContenido(8) " onchange="">
            Realizar pago
       
           </button>
-  
+
            
             `;
     }) 
 } 
+
+
+//!Generar Pago
+function pago(){
+    
+
+
+}
+
+
+
+//Genera el contenido en sub- menus 
+// ayuda
+// con este elemmento  "sub-ayuda" la abrire
+
+const openModal= document.querySelector('sub-ayuda');
+const modalA=document.querySelector('.modalA');
+const  closeModal=document.querySelector('.modalclose');
+
+openModal.addEventListener('onclick', ()=>{
+   
+    modalA.classList.add('modalA--Show');
+   
+});
+
+closeModal.addEventListener('onclick', ()=>{
+   
+    modalA.classList.remove('modalA--Show');
+    console.log('ver el erreo');
+   
+});
+//? End-submenu-ayuda
+
+
+//! Pedidos
+
+
+
+
