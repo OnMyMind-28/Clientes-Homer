@@ -3,7 +3,7 @@
 
 }
 
-@media (max-width: 1800px) and (max-width: 360px){
+@media (max-width: 1800px) and (min-width: 300px){
 
     /*Diseño navbar*/
     .nav-color{
