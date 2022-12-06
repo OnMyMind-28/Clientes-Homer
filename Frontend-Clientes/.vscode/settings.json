@@ -7,13 +7,8 @@
       "editor.selectionHighlightBackground": "#ac0039",
       "editorLineNumber.foreground": "#b658b9bd",
       "activityBar.background": "#7520eb",//Barra lateral izquierda
-<<<<<<< HEAD:.vscode/settings.json
       "titleBar.activeBackground": "#14f5fd49",//Barra superior
       "titleBar.activeForeground": "#ffffffc4"
-=======
-      "titleBar.activeBackground": "#ddb00c",//Barra superior
-      "titleBar.activeForeground": "#fdf8fc"
->>>>>>> 618d23a72e70fe3395af6286439e4f7718435efa:Frontend-Clientes/.vscode/settings.json
     }
   }
   
