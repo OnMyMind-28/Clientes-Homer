@@ -88,18 +88,24 @@
     </div>
 
   </section>
-  
+
+  <!--! usuario y formulario-->
   <!--Modal para mostrar usuario y formulario--> 
 <section id="contenido-3">
     <div id="modalInicio" class="modal-inicio">
   
     </div>
   </section>
+  <!--! usuario y formulario-->
+  
+
+    <!--!Registro-->
   <section id="contenido-4">
     <div id="modalRegistro" class="modal-inicio">
   
     </div>
   </section>
+  <!--!Registro-->
 
    <!--!EMPRESA-->
   <!--  -->
@@ -111,6 +117,7 @@
         </div>
       </div>
   </section>
+  <!--!Empresa-->
 
    <!--!Productos   <i class="fa-solid fa-heart"></i>,  <i class="fa-solid fa-cart-shopping"></i> se necesita agrgar el carrito  -->
    <!--Contenido 6 para la generar los productos -->
@@ -121,16 +128,18 @@
         </div>
       </div>
   </section>
+  <!--!Productos-->
 
    <!--!ORDEN-->
   <!--Section de la pagina para realizar orden -->
   <section id="contenido-7">
-    
+
 
   </section>
+  <!--!ORDEN-->
 
 
-  <!--!PAGO-->
+  <!--!Forma de Pago , tenemos dos devito y credito-->
   <!--Section de la pagina para realizar pago-->
   <section id="contenido-8">
      <div class="contenedorPago">
@@ -140,7 +149,7 @@
                   <img  class="img-pago" src="img/publicidad/2.card.png"  alt="">
                 </div>
         <form action="" id="formulario-tarjeta" class="formulario-tarjeta">
-                
+
 
                  <div class="divPago"  id="pag" >
                     <div class="tituloPago">
@@ -166,7 +175,8 @@
 
 </section>
 </section>
- <!--!PAGO-->
+<!--TODO: faltas las funcionalidades del backend-->
+ <!--!Tarjeta-->
 
 <!--***TODO lo de SUBMENÚ CONTENIDOS***-->
 <!--*Submenu-Notificaciones falta-->
@@ -218,6 +228,7 @@
           <!--!ends-->
        </div>
      </div>
+     <!--TODO:  finalizado-->
 </section>
 
 <!--*Submenu-pago-->
@@ -263,6 +274,7 @@
          </div>
     </div>
 <!--TODO: seguridad-->
+<!--TODO:  finalizado-->
 </section>
 
 <!--*Submenu-ayuda-->
@@ -270,7 +282,7 @@
 <!--apor medio de esta funcion loa abrire -->
 <section id="sub-ayuda" class="ayuda ">
       <!--MODAl -->
-      <section  class="modalA    modalA--Show ">
+      <section  class="modalA    modalA--Show">
         <!--Modal Conteiner -->
         <div class="modalB">  
           <div class="   " style="text-align: center;" ></div>
@@ -278,17 +290,26 @@
               <img  class="img-ayuda" src="img/publicidad/helpCostumers.png" alt="">
               <p class="">2234-7890</p>
               <button class="  modalCall" onclick="">llamar ahora!</button>
-              <!--TODO:  no me cierra-->
-              <button id="opcion-registro" class="btn-inicio opcion  modalclose " onclick="click(), selecionContenido(2)"  data-bs-dismiss="modalA">
-                Cancelar</button>
+               <!--TODO:  no me cierra seleccion 2 es la landig page-->
+               <div class="opcionOrden"  >
+               <button id="" class="  modalclose" onclick="cerrarAyuda()" >
+                 Cancelar</button>
+           </div>
+
+             
           </div> 
         </div>
       </section>
   </section>
-<!--TODO: Ayuda-->
+<!--TODO: Ayuda finalizado-->
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
     <script src="js/controlador.js"></script>
+    <!--TODO: axion sin internet -->
+     <!--TODO: <script  src="src/axios.min.js"></script> -->
+    
+     <!--TODO: axion con internet -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </body>
 </html>

@@ -116,7 +116,7 @@ if(localStorageProductos.getItem('productos')==null){
 }
 
 //Funcion contenidos  principales 
-const opcionNav = 1 ; //opcion para ver el contenido despues del inico de sesión
+const opcionNav = 1 ; //!opcion para ver el contenido despues del inico de sesión
 const opcionLanding = 2; 
 const opcionModalIni= 3;
 const opcionModalReg = 4;
@@ -321,7 +321,22 @@ function modalInicio () {
     </form>
   </div> `
 }
+
+/*!como consumir la peticion 
+ya creada por la Api
+user
+
+const options = {method: 'POST'};
+
+fetch('http://localhost:3000/api/v1/users/', options)
+  .then(response => response.json())
+  .then(response => console.log(response))
+  .catch(err => console.error(err));
+  */
+  
 function modalRegistro () {
+    document.getElementById ('modalRegistro').innerHTML = "";
+    //! linia para formatear
     document.getElementById ('modalRegistro').innerHTML += `
     <div class="modal-container ">
   
@@ -335,12 +350,14 @@ function modalRegistro () {
 </form>
 </div>
      `
+
+
 }
 //Función para evitar el recargo por defecto del navegador al enviar formulario
 function noRecargo(event){
     event.preventDefault();
 }
-//Genera las categorías 
+//TODO:Genera las categorías 
 function generarEmpresa() { 
     document.getElementById('empresa').innerHTML = ''; 
     empresas.forEach(function (emp) { 
@@ -420,26 +437,33 @@ function detalleOrden() {
     }) 
 } 
 
+/* relizar pago get 
+obtener pago get
+const options = {method: 'GET'};
+
+fetch('http://localhost:3000/api/v1/pay/', options)
+  .then(response => response.json())
+  .then(response => console.log(response))
+  .catch(err => console.error(err));  */
 
 //!Generar Pago
 function pago(){
-    
+    document.getElementById('').innerHTML ='';
 
 
 }
 
 
 
-//Genera el contenido en sub- menus 
-// ayuda
-// con este elemmento  "sub-ayuda" la abrire
-
+//*Genera el contenido en sub- menus 
+// con este elemmento  "sub-ayuda"  se abre la ventana de ayuda
+/*
 const openModal= document.querySelector('sub-ayuda');
 const modalA=document.querySelector('.modalA');
 const  closeModal=document.querySelector('.modalclose');
 
 openModal.addEventListener('onclick', ()=>{
-   
+
     modalA.classList.add('modalA--Show');
    
 });
@@ -448,13 +472,57 @@ closeModal.addEventListener('onclick', ()=>{
    
     modalA.classList.remove('modalA--Show');
     console.log('ver el erreo');
+
    
-});
-//? End-submenu-ayuda
+});*/
 
+ //! cerrar-submenu-ayuda
+ function cerrarAyuda()
+   {
+     console.log('cerarAyuda');
 
+    //empresa
+    document.getElementById('contenido-1').style.display = "none";
+    document.getElementById('contenido-2').style.display = "block";
+    document.getElementById('contenido-3').style.display = "none";
+    document.getElementById('contenido-4').style.display = "none";
+    document.getElementById('contenido-5').style.display = "none";
+    document.getElementById('contenido-6').style.display = "none";
+    document.getElementById('contenido-7').style.display = "none";
+    document.getElementById('contenido-8').style.display = "none";
+    document.getElementById('sub-ayuda').style.display = "none";
+    document.getElementById('contenido-all-principal').style.display = "block";
+
+    //ayuda
+    /*
+    
+    document.getElementById('contenido-all-principal').style.display = "block";
+    document.getElementById('sub-notificacion').style.display = "none";
+    document.getElementById('sub-misPedidos').style.display = "none";
+    document.getElementById('sub-cupones').style.display = "none";
+    document.getElementById('sub-pago').style.display = "none";
+    document.getElementById('sub-cuenta').style.display = "none";
+    document.getElementById('sub-seguridad').style.display = "none";
+    document.getElementById('sub-ayuda').style.display = "none";
+
+       */
+        
+
+ } 
+
+//? End-submenu-ayuda y ya cierrar
 //! Pedidos
 
+//! consumir el backend, funciones flecha, anonima, funcion normal 
+/*
+axios.get('http://localhost:3000/api/v1/users/638f1b1ae9404b404f4d74b8')
+.then((res) => {
+    console.log(res);
+}) 
 
-
+.catch((res) => {
+        console.log(res);
+})
+*/
+//!promesas
 
