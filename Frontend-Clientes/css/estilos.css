@@ -220,41 +220,54 @@ h5{
 }
 
 /*Resgistro*/
-
+ /*!Registrio caja*/
    
   .modal-container {
-   background-color: #FFFFFF;
+   background-color:  #FFFFFF;
+   height: 290px;
    width: 270px;
-   height: 14rem;
-   margin: auto;
-   position: relative;  
+   margin: 5px;
+  position: relative;
    border-radius: 1rem;
   }
+
   .modal-form{
   text-align: center;
   color: rgba(150, 148, 148, 0.521);
   
 }
+  
+  
+/*!Registrio boton*/
+
 .btn-modal{
-  font-size: 12px;
-  background-color:  #FEBB22;
+    margin: 1rem;
+   font-size: 18px;
+   background-color:  #FEBB22;
   color: #FFFFFF;
   border-radius: 15px;
   border: 0;
   cursor: pointer;
-  margin-top: 2px;
+  margin-bottom: 17px;
 }
 
-.loginReg.passLogin.emailLogin{
-    text-align: left;
-    color: #42403e !important;
+
+/*!Registrio : email y password*/
+h5{
+    margin: 5px;
+    padding: 5px;
 }
-.emailLogin{
-    
+
+  
+}
+.email-Login{
+    margin: 16px;
+    padding: 5px;
     font-size: medium;
+    color:#51146d ;
 }
 
-.passLogin{
+.password-Login{
     font-size: medium;
 }
    
@@ -365,7 +378,7 @@ height: 60px !important;
     color: #6C6966;
   }
  
-}
+
 /*TODO: Orden*/
 /*!Orden*/
 .cardOrden{
@@ -526,7 +539,7 @@ height: 60px !important;
     left: 0; 
     right: 0; 
     bottom: 0; 
-    background-color: #f0e4e4bd; 
+    background-color: hsla(270, 38%, 50%, 0.706); 
     display: flex; 
     opacity: 0; 
     pointer-events: none; 
@@ -543,7 +556,7 @@ height: 60px !important;
     width: 90%;
     max-width: 600px;
     max-height: 90%;
-    background-color: #fff;
+    background-color: rgba(133, 51, 158, 0.404);
     border-radius: 6px;
     padding: 3em 2.5em;
     display: grid;
@@ -567,7 +580,7 @@ height: 60px !important;
 .modalCall{
     text-decoration: none;
     color: rgb(6, 2, 7);
-    background-color: #bdaeac;
+    background-color:#d6858579;
     padding: 1em 3em;
     border: 1px solid ;
     border-radius: 6px;
@@ -580,7 +593,7 @@ height: 60px !important;
 .modalclose{
     text-decoration: none;
     color: rgb(43, 13, 46);
-    background-color: #f59f00;
+    background-color:#d6858579;
     padding: 1em 3em;
     border: 1px solid ;
     border-radius: 6px;
@@ -598,25 +611,40 @@ height: 60px !important;
     text-align: center;
     margin-bottom:20px ;
     font-weight: 300s;
-    color: #6C6966;
+    color: #fceee0;
     
+}
+/* ? Texto  y h1  */
+
+.helph{
+    color: rgb(254, 195, 75);
+    font-style: bold;
+    padding: 5px;
+    background-color: #e6e0d80a;
+    
+    
+}
+.helpt{
+    color: rgb(254, 195, 75);
+    font-style: bold;
+    padding: 15px;
+    background-color: #e6e0d80a;
 }
 
 .modalclose, .modalCall{
-    color: #000000;
-    
+    color: rgb(240, 240, 240);
 }
 
 
 .img-ayuda{
-    width: 12rem;
+    width: 10rem;
 }
 
 
 /** Segurida*/
 /*TODO: Falta verificar el cierre*/
 .contenerSeguridad{
-    background-color: #fffdfa7c;
+    background-color: #fffdfa3d;
     width: 100%;
     padding: 1rem;
     margin-top: 1rem;
@@ -655,7 +683,9 @@ height: 60px !important;
     border-radius: 25px;
 }
 
-
+.Footerseguridad{
+    background-color: #FFC2B2;
+}
 
 
 
@@ -680,11 +710,16 @@ height: 60px !important;
 .cupon-titule{
     background-color: #c5b8ac41 !important;
     border-radius: 28px;
+    color: rgb(191, 15, 235);
+      font-style: Bold;
+
 }
 
 .cupon-text{ 
 padding: 10px;
 margin: 20px;
+color: rgb(191, 15, 235);
+font-style: normal;
 
 }
 
@@ -697,18 +732,6 @@ margin: 20px;
     
 }
 
-.btncodigo{
-    align-items: center !important;
-    max-width: 10rem !important;
-    padding: 10px;
-    margin: 30px;
-    width: 30px;
-    background-image: linear-gradient( 102.4deg,  rgba(253,189,85,1) 7.8%, rgba(249,131,255,1) 100.3% ) !important;
-     color: #6C6966;
-     border-radius: 15px;
-     border: 0;
-     cursor: pointer;
-}
 
 .cupon-img {
     padding: 0.5rem;
@@ -716,57 +739,463 @@ margin: 20px;
     font-display: flex;
     width: 10rem;
 }
+.modalclosecupon{
+    align-items: center !important;
+    max-width: 10rem !important;
+    padding-bottom: 2rem;
+   background-color: rgba(255, 127, 80, 0.24);
+    padding: 10px;
+    margin: 30px;
+    border-radius: 15px;
+    cursor: pointer;
+    color: rgb(191, 15, 235);
+}
+/*TODOCupones /
 
 
-/*TODO: */
+
+
+/*TODO  modalPedidos /
 /**Mis Pedidos*/
 
 .contenedorPedidos{
    background-color: #fff;
 }
+/**!modalBpedidos back */
+.modalApedidos{
 
-.pedido-h{
-    display: flex;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    display: flex; 
+    opacity: 0; 
+    pointer-events: none; 
+    background-color:rgba(179, 128, 123, 0.836);
+    transition: opacity .6s .9s; 
+    transition-property: opacity, left, top, height;
+   
+
+}
+       
+/**!modalB la parde del sombreado */
+
+.modalBpedidos{
+margin: auto;
+width: 90%;
+max-width: 600px;
+max-height: 90%;
+background-color:rgb(255, 176, 169);
+border-radius: 6px;
+padding: 3em 2.5em;
+display: grid;
+gap: 1em;
+place-items: center;
+grid-auto-columns: 100%;
+transform: var(--transform);
+transition:var(--transition);  
 }
 
-.Pedidos-titulo{
-    text-align: center;
-   padding: 10px;
-    margin: 0;
-    color:#6C6966;
+
+
+/**!modalAPedido  se muestra la modal */  
+.modalA--Showpedidos { 
+opacity: 1; 
+pointer-events: unset; 
+transition: opacity .6s; 
+--transform: translateY(0); 
+--transition: transform .8s .8s; 
 }
-/*! terminer  no estan posicionados los titulos */
-.pedido-h{
-    display: flex;
+
+
+
+/**!modalAordenes boton */
+
+.PedidosH{
+ color:#b0e2e2d8;
+ font-style: bold;
+text-align: center;
 }
-.pedido-H1{
-    padding: 20px;
-    font-size: small;
+.pedidosText{
+  background-color: #893ccc05;
+  width: 100%;
+
  
-    color: #6C6966;
-}
 
-.pedido-H2{
-    font-size: small;
-  
-    color: #6C6966;
-}
-/**! faltan los botenes he igual*/
-.pedi-btn{
+ }
+ 
+
+.botonPedidos{
     display: flex;
-    align-items: center !important;
-    padding: 10px;
-    margin: 30px;
-    width: 10rem;
-     border-radius: 15px;
-     border: 0;
-     cursor: pointer;
+}
+.modalclosepedidos{
+  padding:5px ;
 }
 
-.btnPedidosb, .btnPedidosa{
-    align-items: center !important;
-    padding: 10px;
-    margin: 30px;
-    width: 10rem;
+
+
+.modalclosepedidos{
+color:#00f0f0fd;
+background-color :rgba(212, 105, 177, 0.692);
+width: 9rem;
+margin: 12px;
+padding: 10px;
+
+
+}
+.imgpedidos{
+    width: 14rem;
+
+   border-radius: 16px; 
+    padding: 18px;
     
+}
+
+
+/**modalPedidos */
+
+
+
+/**!modalAordenes */
+.modalAordenes{
+
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    display: flex; 
+    opacity: 0; 
+    pointer-events: none; 
+    background-color:rgba(207, 179, 166, 0.89);
+    transition: opacity .6s .9s; 
+    transition-property: opacity, left, top, height;
+   
+
+}
+       
+    
+
+/**!modalAordenes la parde del sombreado */
+
+.modalBordenes{
+    margin: auto;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90%;
+    background-color:rgb(196, 158, 157);
+    border-radius: 6px;
+    padding: 3em 2.5em;
+    display: grid;
+    gap: 1em;
+    place-items: center;
+    grid-auto-columns: 100%;
+    transform: var(--transform);
+    transition:var(--transition);  
+}
+
+
+
+ /**!modalAordenes  se muestra la modal */  
+.modalA--Showorden { 
+    opacity: 1; 
+    pointer-events: unset; 
+    transition: opacity .6s; 
+    --transform: translateY(0); 
+    --transition: transform .8s .8s; 
+}
+
+
+
+/**!modalAordenes boton */
+.modalcloseorden{
+    align-items: center !important;
+    color:#f5f4f1fd;
+    background-color :rgba(223, 142, 134, 0.822);
+    width: 9rem;
+    margin: 12px;
+    padding: 10px;
+   
+
+}
+
+.ordenes1{
+    color:#f5f4f1fd;
+   
+}
+.ordenes2{
+    
+    color:#f5f4f1fd;
+   
+}
+
+.img-pedidos{
+    width: 10rem;
+}
+
+
+
+
+
+/**!TODO lo que Genera contenido de notificaciones*/
+/*!modal padre de las notificasciones*/
+.modalAnoti{
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    display: flex; 
+    opacity: 0; 
+    pointer-events: none; 
+    background-color: #a27bd496;
+    transition: opacity .6s .9s; 
+    transition-property: opacity, left, top, height;
+
+}
+/*!modal hijo  de las notificasciones*/
+
+.modalBnoti{
+    margin: auto;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90%;
+    background-color:rgba(186, 162, 225, 0.74);
+    border-radius: 6px;
+    padding: 3em 2.5em;
+    display: grid;
+    gap: 1em;
+    place-items: center;
+    grid-auto-columns: 100%;
+    transform: var(--transform);
+    transition:var(--transition);  
+}
+
+/*!mostras la modal de las notificasciones*/
+
+.modalA--Shownoti{
+    opacity: 6; 
+    pointer-events: unset; 
+    transition: opacity .6s; 
+    --transform: translateY(0); 
+    --transition: transform .10s .10s; 
+
+}
+/*!BottonCierre de las notificasciones*/
+.modalclosenoti{
+
+    align-items: center !important;
+    color:#f0eee9fd;
+    background-color:#a27bd496;
+    width: 9rem;
+    margin: 12px;
+    padding: 10px;
+
+}
+/*!h1 de las notificasciones*/
+
+.NotiWell{
+    color: rgb(254, 195, 75);
+    font-style: bold;
+    text-align: left;
+    padding: 15px;
+    background-color: #e6e0d83b;
+
+}
+
+/*!p de las notificasciones*/
+
+.NotiWel{
+    color: #e6e1d1;
+    font-style: bold;
+    
+}
+/*!imagen de las notificasciones*/
+
+.notiImg{
+    width: 14rem;
+    border-radius: 15rem;
+    opacity: 9; 
+    padding: 18px;
+    
+}
+
+/*?Dic para pocicionas los iconos lupa y flecha*/
+#lupaNoti{ 
+    display: flex;
+    text-align: left !important;
+    width: 3rem;
+    color: rgb(254, 195, 75);
+    padding: 12px;
+    margin: 0.5rem;
+}
+   
+/*?Dic para pocicionas los Texto*/
+.Noti{
+    padding: 12px;
+    display: flex;
+    color:rgb(254, 195, 75);
+    font-style: bold;
+   
+    
+    
+}
+/*?Dic para pocicionas los iconos con Flex*/
+.NotIconos{
+    margin-top: -30px;
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+/**!TODO lo que Genera contenido de notificaciones cierre*/
+
+
+/*?Cuenta */
+/**!modalA la parde del sombreado */
+.modalAcuen{
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    display: flex; 
+    opacity: 0; 
+    pointer-events: none; 
+    background-color:hsla(349, 37%, 77%, 0.719);
+    transition: opacity .6s .9s; 
+    transition-property: opacity, left, top, height;
+
+}
+
+.modalBcuen{
+    margin: auto;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90%;
+    background-color:rgba(229, 151, 164, 0.596);
+    border-radius: 6px;
+    padding: 3em 2.5em;
+    display: grid;
+    gap: 1em;
+    place-items: center;
+    grid-auto-columns: 100%;
+    transform: var(--transform);
+    transition:var(--transition);  
+}
+
+
+
+ /**!modalA show  se muestra la modal */  
+.modalA--Showcuen { 
+    opacity: 1; 
+    pointer-events: unset; 
+    transition: opacity .6s; 
+    --transform: translateY(0); 
+    --transition: transform .8s .8s; 
+}
+
+
+
+/**!modal boton */
+.modalclosecuen{
+    align-items: center !important;
+    color:#f5f4f1fd;
+    background-color :rgba(134, 31, 202, 0.568);
+    width: 9rem;
+    margin: 12px;
+    padding: 10px;
+   
+
+}
+
+
+
+.img-Cuenta{
+ width: 10rem;
+
+}
+   
+
+
+/*?Pago */
+/**!modalA la parde del sombreado */
+.modalApago{
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    display: flex; 
+    opacity: 0; 
+    pointer-events: none; 
+    background-color:hsl(347, 57%, 82%);
+    transition: opacity .6s .9s; 
+    transition-property: opacity, left, top, height;
+
+}
+
+.modalBpago{
+    margin: auto;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90%;
+    background-color:rgba(255, 218, 240, 0.904);
+    border-radius: 6px;
+    padding: 3em 2.5em;
+    display: grid;
+    gap: 1em;
+    place-items: center;
+    grid-auto-columns: 100%;
+    transform: var(--transform);
+    transition:var(--transition);  
+}
+
+
+
+ /**!modalA show  se muestra la modal */  
+.modalA--Showpago { 
+    opacity: 1; 
+    pointer-events: unset; 
+    transition: opacity .6s; 
+    --transform: translateY(0); 
+    --transition: transform .8s .8s; 
+}
+
+
+
+/**!modal boton */
+.modalclosepago{
+    
+    color:#51146d;
+    background-color :rgba(255, 218, 240, 0.438);
+    width: 6.5rem;
+    margin: 12px;
+    padding: 10px;
+}
+.boton1.boton2{
+
+    background-color: hsl(347, 57%, 82%);
+}
+
+
+
+.img-pago{
+ width: 10rem;
+ border-radius: 50px;
+
+}
+
+.pago1{
+  color: #51146d;
+}   
+
+.opcionpago{
+    display: flex;
+}
+
+.pagobotton{
+    justify-content:space-evenly;
 }
